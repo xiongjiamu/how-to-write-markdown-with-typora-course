@@ -1,0 +1,16 @@
+title: how to write markdown with typora
+description: this is a course teaches you how to write markdown with typora.
+template:
+  repo: how-to-write-markdown-with-typora-template
+  name: how-to-write-markdown-with-typora
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
