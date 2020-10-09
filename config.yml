@@ -7,6 +7,17 @@ before:
   - type: createIssue
     title: Welcome!
     body: new-issue.md
+preferences:
+  - type: dropdown
+    name: my_dropdown
+    label: My Dropdown List
+    description: Optional description for more information
+    options:
+      - label: Item 1
+        value: item1
+      - label: Item 2
+        value: item2
+        selected: true
 steps:
   - title: First step
     description: The first step in your course
